@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Clearfix</title>
+	</head>
+	<style>
+			head {
+				font-family: helvetica, Arial, sans-serif;
+			}
+
+			body {
+			 color: #333;
+			 font-family: helvetica, Arial, sans-serif;
+			 width: 960px;
+			 margin: 0px 50px;
+			 font-size: 20px;
+			 line-height: 150%;
+					}
+			a:link {text-decoration: none}
+			a:visited{text-decoration: none}
+			a:active {text-decoration: none}
+			a:hover {text-decoration: underline; color: orange;}
+		</style>
+
+	</style>
+
+	<body>
+		<h1>Clearfix</h1>
+				<p>There are three ways to do a clearfix, or clearing floats after a float-collapse has occurred.</p>
+					<ol>
+						<li>Creative a div and style it inline.  Do inline for a blog, if it's a part of a post and you're floating a couple images and then clearing the float at the end.  <code>"Class=clear"</code> means nothing in google reader or bloglines, etc.  Inline will still work in a feedreader. This solution is frowned upon by semantic purists because an empty div has no adds no contextual meaning to the content.</li>
+						<li>Create a div class and style that class in CSS.  Cleans up your code a little bit (not by much)</li>
+						<li>Style the wrapper itself with overflow: auto; or overflow; hidden</li>
+						<li>"The Easy Clearing Method" uses a css pseudo selector (:after) to clear floats, by applying a class like "clearfix" to the parent element and then adding the CSS
+						<code>.clearfix:after { 
+   						content: "."; 
+   						visibility: hidden; 
+   						display: block; 
+   						height: 0; 
+   						clear: both;
+						}
+						</code>
+						</li>
+					</ol>
+				<p>Sources: <a href="http://css-tricks.com/all-about-floats/">CSS Tricks</a> and <a href="http://css-tricks.com/video-screencasts/42-all-about-floats-screencast/">All About Floats Screencast</a></p>
+	</body>
+</html>

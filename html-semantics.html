@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<title>HTML Semantics</title>
+		<style>
+			head {
+				font-family: helvetica, Arial, sans-serif;
+			}
+			body {
+			 color: #333;
+			 font-family: helvetica, Arial, sans-serif;
+			 width: 960px;
+			 margin: 0px 50px 40px;
+			 font-size: 20px;
+			 line-height: 150%;
+			}
+			ul {
+				line-height: 100%;
+				width: 640px;
+				font-size: 17px;
+				}
+			img {
+				width: 960px;
+			}
+			a:link {text-decoration: none}
+			a:visited{text-decoration: none}
+			a:active {text-decoration: none}
+			a:hover {text-decoration: underline; color: orange;}
+		</style>
+<body>
+		<h1>HTML Semantics</h1>
+			<h2><a href="http://www.webdesignfromscratch.com/html-css/semantic-html/">Web Design From Scratch</a></h2>
+				<p>Semantics is the study of meaning, so HTML semantics is looking at creating a universally understood meaning and definition for different HTML elements and tags to ensure consistent markup.  As the article states, "Semantically-correct HTML is where the tags used to structure content are selected and applied appropriate to the meaning of the content."  For example, only using the paragraph tag to indicate an actual paragraph (not to create space in a document).  Similarly, following proper HTML semantics, avoid bloating your documents with inline styling within HTML tags: most styling should take place in a separate stylesheet.  The author goes on to identify 4 benefits of writing semantically correct markup.
+					<ul>
+						<li>Ease of Use</li>
+							<p>Easier to read and edit, no extra inline styling, easier for others to interact with if you pass it off to a new developer, faster loading times.</p>
+						<li>Accessibility</li>
+							<p>Keeping styling separate allows the content to be paramount in your HTML file, so that the message is the same whether it's printed out, viewed on an out of date browser, or accessed by a text-to-speech reader.
+						<li>SEO</li>
+							<p>Search engine spiders and crawlers will likely favor a clean, lightweight HTML file to a bloated one.  Additionally, your keywords are less likely to be lost in a mess of styling and will appear in higher-value tags (i.e. heading).
+						<li>Repurposing</li>
+							<p>The content of the page is more likely to be aggregated/remixed into an RSS feed, blog post, application, etc, if it's just content and structure.  Having to go through hard-coded styling makes it less likely your page will be grabbed/reused.
+					</ul>
+				</p>
+				<p>In short, HTML semantics is properly utilizing the variety of elements and tags available to you in order to write better, more efficient markup.
+				<h2><a href="http://html5doctor.com/lets-talk-about-semantics/">HTML5 Doctor</a></h2>
+					<p>This article was interesting because it brought up a little controversy surrounding the idea of HTML semantics.  In HTML5, with the introduction of specific 'semantic' elements and tags (section, article, nav, aside, instead of just using div), developers have an ability to easily classify and give meaning to different elements on the page.  Some people think the added specificity is a waste of people's time because it forces whoever is writing it to stop and think, "Wait, should this be a section, or an article, or an aside?" when in reality any of those, including a generic div tag, would work just fine.  Others have suggested that the increased specificity will force developers to think about the structure of their content in more depth, creating better organized and optimized web pages.  In the end, it appears to be like anything else: don't overthink it too much and you'll be fine.  This article also included a pretty great flowchart to assist in the identification of which sectioning element to use with what type of content in order to be semantically correct.
+					<p>
+				<img src="http://html5doctor.com/downloads/h5d-sectioning-flowchart.png" alt="html5 Element Flowchart"/>

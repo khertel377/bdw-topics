@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Float-Collapse</title>
+	</head>
+	<style>
+			head {
+				font-family: helvetica, Arial, sans-serif;
+			}
+
+			body {
+			 color: #333;
+			 font-family: helvetica, Arial, sans-serif;
+			 width: 960px;
+			 margin: 0px 50px;
+			 font-size: 20px;
+			 line-height: 150%;
+					}
+			a:link {text-decoration: none}
+			a:visited{text-decoration: none}
+			a:active {text-decoration: none}
+			a:hover {text-decoration: underline; color: orange;}
+		</style>
+
+	</style>
+
+	<body>
+		<h1>Float-Collapse</h1>
+				<p>The float-collapse is a fairly common symptom in layouts utilizing floats.  It's not a browser bug; it's fully expected and proper behavior.  It's when the parent element that contains the float collapses on itself so that it no longer contains the full height of the floated content.  In class, this is what happened with our "salmon species" aside, where the aside began intruding on top of the following section.</p>
+				<p>When you float content, it removes that content from the document flow.  Meaning that once the content is "removed" from flow in relation to other block elements, the remaining content proceeds to act as if the floated content isn't there at all.  This is what causes the overlapping content.  To fix the collapsed parent, there are several methods of clearing floats and reinstating the desired organization and flow to the content.
+
+
+				<p>Sources: <a href="http://coding.smashingmagazine.com/2009/10/19/the-mystery-of-css-float-property/">Smashing Magazine</a> and <a href="http://alistapart.com/article/css-floats-101">A List Apart</a></p>
+	</body>
+</html>
