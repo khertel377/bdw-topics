@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HTML Repaint</title>
+	</head>
+	<style>
+			head {
+				font-family: helvetica, Arial, sans-serif;
+			}
+
+			body {
+			 color: #333;
+			 font-family: helvetica, Arial, sans-serif;
+			 width: 960px;
+			 margin: 0px 50px;
+			 font-size: 20px;
+			 line-height: 150%;
+					}
+			a:link {text-decoration: none}
+			a:visited{text-decoration: none}
+			a:active {text-decoration: none}
+			a:hover {text-decoration: underline; color: orange;}
+
+			blockquote {
+				font-style: italic;
+			}
+		</style>
+	<body>
+		<h1>HTML Repaint</h1>
+				<p>HTML Repaint is similar to reflow, but deals explicitly with changes to the visual representation of elements on the page, rather than the calculation of their organization, order, or geometry.  A repaint occurs when changes are made to an element's skin that change visibility, but do not affect its layout.  In simple terms, a reflow is recalculating the page's layout, while repaint is the browser redrawing that layout on the page.
+					<blockquote>"Repaint - also known as redraw - is what happens whenever something is made visible when it was not previously visible, or vice versa, without altering the layout of the document. An example would be when adding an outline to an element, changing the background color, or changing the visibility style. Repaint is expensive in terms of performance, as it requires the engine to search through all elements to determine what is visible, and what should be displayed." - Opera</blockquote>
+				Similar to reflow, repaint is an expensive process when it comes to speed and performance, and should be mitigated so it doesn't negatively affect the user's experience.
+				</p>
+				<p>Sources: <a href="http://www.vcarrer.com/2011/02/about-repaint-and-reflow-in-javascript.html">Carrer Web Blog</a> and <a href="http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/">PHPied</a></p>
+	</body>
+</html>

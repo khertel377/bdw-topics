@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HTML Reflow</title>
+	</head>
+	<style>
+			head {
+				font-family: helvetica, Arial, sans-serif;
+			}
+
+			body {
+			 color: #333;
+			 font-family: helvetica, Arial, sans-serif;
+			 width: 960px;
+			 margin: 0px 50px;
+			 font-size: 20px;
+			 line-height: 150%;
+					}
+			a:link {text-decoration: none}
+			a:visited{text-decoration: none}
+			a:active {text-decoration: none}
+			a:hover {text-decoration: underline; color: orange;}
+			ul, ol {
+				font-size: 17px;
+			}
+	</style>
+	<body>
+		<h1>HTML Reflow</h1>
+				<p>Reflow is the name of the process by which a browser recalculates the positions and sizes of elements on the page in order to re-render part or all of the document.  The HTML formatting objects are called frames, and the browser will place these frames hierarchically based on the content model provided by the document. A reflow is triggered when the input information used to construct a render tree is changed.</p>
+				<p>Some actions that trigger a reflow:
+					<ul>
+						<li>Resizing the window</li>
+						<li>Changing the font</li>
+						<li>Adding or removing stylesheet</li>
+						<li>Content changes, such as a user typing text in</li>
+						<li>An input box</li>
+						<li>Activation of CSS pseudo classes such as :hover</li>
+						<li>Manipulating the class attribute</li>
+						<li>A script manipulating the DOM</li>
+						<li>Calculating offsetWidth and offsetHeight</li>
+					</ul>
+				</p>
+				<p>Reflows greatly affect speed and performance, which ultimately harm the user experience.  To minimize these effects, developers have some basic guidelines.
+					<ol>
+						<li>Reduce unnecessary DOM depth. Changes at one level in the DOM tree can cause changes at every level of the tree - all the way up to the root, and all the the way down into the children of the modified node. This leads to more time being spent performing reflow.</li>
+						<li>Minimize CSS rules, and remove unused CSS rules.</li>
+						<li>If you make complex rendering changes such as animations, do so out of the flow. Use position-absolute or position-fixed to accomplish this.</li>
+						<li>Avoid unnecessary complex CSS selectors - descendant selectors in particular - which require more CPU power to do selector matching.</li>
+					</ol>
+				</p>
+				<p>Sources: <a href="http://www-archive.mozilla.org/newlayout/doc/reflow.html">Mozilla</a> and <a href="https://developers.google.com/speed/articles/reflow">Google</a></p>
+	</body>
+</html>
